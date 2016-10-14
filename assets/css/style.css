@@ -1,2 +1,27 @@
-/** {
-	/*border: 1px solid black;*
+#header{
+  font-family: 'Gentium Basic', serif;
+}
+#game{
+  font-family: 'Eczar', serif;
+  margin-left: 50%;
+  font-size: 20px;
+
+}
+#numlives{
+  font-family: 'Bree Serif', serif;
+  font-size: 15px;
+  margin-left: 50%;
+}
+#userGuessedLetters{
+  font-family: 'Bree Serif', serif;
+  font-size: 15px;
+  margin-left: 50%;
+}
+#teamName{
+ font-family: 'Bree Serif', serif;
+ font-size: 15px;
+  margin-left: 50%;
+}
+#newbtn{
+  margin-left: 25%;
+}

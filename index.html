@@ -4,46 +4,43 @@
 	<!-- <meta charset="UTF-8"> -->
 	<title>Hangman</title>
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Eczar|Gentium+Basic:700i" rel="stylesheet">
   <!-- https://bootswatch.com/flatly/bootstrap.min.css -->
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <div class="container-fluid">
-   <div class="row">       
-     <div class="col-md-12 text-center">          
-       <div class="jumbotron"><h1>Hangman Teams</h1></div>
+   <div class="row">
+     <div class="col-md-12 text-center">
+       <div id="header" class="jumbotron"><img src="assets/images/game.png"><h1>Hangman Teams</h1></div>
      </div>
    </div>
 </div>
 <body>
- <div class="container">
-   <div class="row">       
+ <!-- <div class="container"> -->
+   <div class="row">
      <div class="col-md-8 text-center">
        <p id = game>Press any letter to guess the team name !!</p>
      </div>
    </div>
    <div class="col-sm-8 text-center">
-     <div id= teamName><p>Name: </p>
-     </div>
+     <div id= teamName><p>Name: </p></div>
    </div>
+    <div class="col-sm-8 text-center">
+       <div id=numlives> <p>Lives Left: 8 </p></div>
+    </div>
      <div class="col-sm-8 text-center">
-       <div id=numlives> <p>Lives Left: 8 </p>
-       </div>
-
+        <div id=userGuessedLetters><p>User Guessed Letters : </p></div><br>
      </div>
-     <div class="col-sm-8 text-center">
-         <div id=userGuessedLetters><p>User Guessed Letters : </p>
-         </div>
-         <br>  
-         <div class="col-sm-6 btn text-center">
+         <div class="col-sm-6 btn text-center" id="newbtn">
            <!-- <div class="list-group"> -->
             <!-- <a class="btn btn-primary btn-lg"> -->
             <form name ="letters">
-           <a class="btn btn-primary btn-lg" id=new name ="refesh" type="button" value= "New Game" onClick="location.reload()">
-           </form><br></a>
+           <a class="btn btn-primary btn-lg" id=new name ="refesh" type="button" onClick="location.reload()">Next</a>
+           </form><br>
          </div>
      <!-- </div> -->
- </div>
+
  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

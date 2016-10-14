@@ -3,7 +3,7 @@ var teamArray = ["eagles","giants","redskins","cowboys","patriots","dolphins","b
 var userGuessedLetters = "User Guessed Letters :";  
 var wrounglettercount= 1;
 var word;
-var numberofgussedletter=8;
+var guesses=8;
 // var numLives= 10;
 
 word = teamArray[Math.floor(Math.random()* teamArray.length)];
@@ -23,24 +23,28 @@ document.onkeyup = function(event){
   // convert letters into lower case
   var userguess = String.fromCharCode(event.keyCode).toLowerCase();
 
-  var guess=false;
+  var guess;
   for(var i=0; i<word.length; i++){
     if(word[i]==userguess){
       newteam[i]=userguess;
       guess = true;
+    }else{
+      guess = false;
     }
   }
   if(!guess){
-    numberofgussedletter = numberofgussedletter-1;
+    guesses = guesses - 1
+    // numberofgussedletter = numberofgussedletter-1;
     userGuessedLetters= userGuessedLetters+userguess+" ";
   }
   var myteam = "Team: " + newteam;
   document.getElementById("teamName").innerHTML= myteam;
 
-  var numLivestMessage = "Lives Left: "+numberofgussedletter;
+  var numLivestMessage = "Lives Left: "+ guesses;
   document.getElementById("numlives").innerHTML= numLivestMessage;
   document.getElementById("userGuessedLetters").innerHTML= userGuessedLetters; 
-  if(numlives==0){
+  
+  if(guesses==0){
     alert('ohhh!! SORRY!! You almost got Hanged! Lets play again!!');
     location.reload(true);
   }
@@ -56,5 +60,4 @@ if(correctLetter){
          location.reload(true);   
        }, 1000);
      }
-       
 }
