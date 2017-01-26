@@ -1,6 +1,6 @@
 var teamArray = ["eagles","giants","redskins","cowboys","patriots","dolphins","bills","jets","packers","vikings","bears","lions","colts","jaguars","texans","titans","panthers","buccaneers","saints","falcons","seahawks","cardinals","49ers","rams","ravens","browns","bengals","steelers","chiefs","broncos","raiders","chargers"];
 // whatever we used in the html to define this id
-var userGuessedLetters = "User Guessed Letters :";  
+var userGuessedLetters = "User Guessed Letters :" ";  
 var wrounglettercount= 1;
 var word;
 var guesses=8;
